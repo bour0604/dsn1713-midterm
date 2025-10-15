@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Sarala:wght@400;700&display=swap');
+
+/* Set custom variables here */
+:root {
+  --bs-primary: #2e483a;
+  --bs-primary-rgb:46, 72, 58;
+
+  --bs-light: #f6f3ed;
+  --bs-light-rgb:246, 243, 237;
+}
+  
+
+
+
+
+
+.navbar-brand {
+  color: var(--bs-light);
+}
+
+nav {
+  background-color: var(--bs-primary);
+}
+
+body {
+  font-family: "Sarala", sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: "Merriweather", serif;
+}
+
+#hero {
+  height: 800px;
+  background-color: #E4E6DB;
+  background-image: url(../images/hero-bg-img.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#hero #content {
+  text-align: center;
+  padding-top: 80px;
+  margin: auto;
+  max-width: 90ch;
+}
+
+#hero button {
+  background-color: var(--bs-primary);
+  color: var(--bs-light);
+  padding: 7px;
+}
+
+#hero .d-flex {
+  height: 800px;
+}
+
+#howitworks .container {
+  text-align: center;
+}
+
+#howitworks #intro {
+  text-align: center;
+  max-width: 100ch;
+  margin: auto;
+  padding-bottom: 40px;
+}
+
+#howitworks h3 {
+  padding-top: 10px;
+}
+
+#howitworks button {
+  background-color: var(--bs-primary);
+  color: var(--bs-light);
+  padding: 7px;
+  margin-top: 40px;
+}
+
+#healthy {
+  margin-top: 0px;
+}
+
+#healthy h2 {
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+#customers {
+  background-color: var(--bs-primary);
+}
+
+#customers h2 {
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+#customers blockquote {
+  padding-top: 20px;
+}
+
+#customers figcaption {
+  color: var(--bs-light);
+}
+
+#questions h2 {
+  text-align: center;
+}
+
+#questions .accordion {
+  padding-top: 40px;
+  padding-bottom: 0px;
+}
+
+#cta {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/cta-bg.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+#cta h2 {
+  color: var(--bs-light);
+}
+
+#cta button {
+  background-color: var(--bs-primary);
+  color: var(--bs-light);
+  padding: 7px;
+}
+
+#cta .d-flex {
+  height: 400px;
+}
+
+footer {
+  background-color: var(--bs-primary);
+  color: var(--bs-light);
+  padding-top: 10px;
+}
+
+footer ul {
+  list-style: none;
+}
+
+section:not(#hero):not(#cta){
+  padding: 60px 0;
+}
+
+@media(min-width: 993px){
+  section:not(#hero):not(#cta){
+    padding: 100px 0;
+  }
+}
